@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generater</title>
+</head>
+<body>
+    <h1 id="pass">Password : </h1>
+    <button onclick="generate()">generate</button>
+    <script>
+        function generate(){
+            const generate=Math.random()
+            .toString (36).slice(2);
+            document.getElementById("pass").innerHTML="Password : "+generate;
+        }
+    </script>
+</body>
+</html>
